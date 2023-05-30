@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta http-equiv="refresh" content="">
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
+		<title>Lucas | Portfolio</title>
+	</head>
+	<body>
+        <header>
+            <h2 class="portfolio">Portfolio</h2>
+            <nav class="navigation">
+                <a href="#" class="active">Accueil</a>
+                <a href="#">CV</a>
+                <a href="#">Projets</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+
+        <section class="secAccueil">
+            <img src="colline1.png" id="colline1">
+            <img src="colline2.png" id="colline2">
+            <img src="colline3.png" id="colline3">
+            <img src="colline4.png" id="colline4">
+            <img src="colline5.png" id="colline5">
+            <img src="arbre.png" id="arbre">
+            <h2 id="text">Lucas Boutevin Sancé</h2>
+            <h2 id="developpeur">Développeur</h2>
+            <img src="feuille.png" id="feuille">
+            <img src="plante.png" id="plante">
+        </section>
+
+
+        <section class="secCv">
+
+            <div class="conainterTitre">
+                <h2>CV</h2>
+            </div>
+            <div class="duo">
+                <div class="containerPhotoDeMoi">
+                    <img src="Photo_de_moi.jpg">
+                </div>
+    
+                <div class="droite">
+                    <h3>Compétences :</h3>
+                    <div class="ListCompetences">
+                        <div class="comp-item">HTML</div>
+                        <div class="comp-item">CSS</div>
+                        <div class="comp-item">PHP</div>
+                        <div class="comp-item">JavaScript</div>
+                        <div class="comp-item">Bootstrap</div>
+                        <div class="comp-item">SQL</div>
+                        <div class="comp-item">Python</div>
+                        <div class="comp-item">Java</div>
+                        <div class="comp-item">C#</div>
+                        <div class="comp-item">GIT</div>
+                    </div>
+                    <div class="containerType">
+                        <button type="button" class="type-item active" data-target="#formation">Formation</button>
+                        <button type="button" class="type-item" data-target="#experience">Expérience</button>
+                    </div>
+                    <!-- Formation -->
+                    <div class="ListCvContent active" id="formation">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">2021 - 2023</span>
+                                <h4>BTS Service informatique aux organisations <span> - Lycée Gustave Eiffel</span></h4>
+                                <p>Option SLAM (Solutions Logicielles et Applications Métier) et Mathématiques Approfondies</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2018 - 2021</span>
+                                <h4>Baccalauréat Général <span> - Lycée Gustave Eiffel</span></h4>
+                                <p>Option Mathématique et NSI (Numérique et sciences informatiques)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience -->
+                    <div class="ListCvContent" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">23 janvier au 17 mars 2023</span>
+                                <h4>Stagiaire développeur <span> - Davelopweb</span></h4>
+                                <p>Mise en conformité d'un plug-in de sauvegarde WordPress en PHP, Utilisation d'un framework WordPress, Manipulation de l'API NextCloud</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">23 Mai au 24 Juin 2022</span>
+                                <h4>Stagiaire développeur <span> - ObbyMedia</span></h4>
+                                <p>Developpement web responsive (HTML/CSS/BootStrap), conception d'interface d'application et mise en relation entre API et application mobile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secProjet">
+            <img src="plante.png" class="reversePlant"></img>
+            <div class="containerTitre"><h2>Projets</h2></div>
+
+            <div class="lesProjets">
+                
+                <a class="containerProjet" href="01-ReservationDesSalles.html">
+                    <img src="reservation_des_salles.jpg">
+                    <div class="projetDescription">
+                        <h4>Réservation des salles</h4>
+                        <p>Controler et ajouter des fonctionnalitées à une application C#</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="02-SiteStatique.html">
+                    <img src="site_statique.png">
+                    <div class="projetDescription">
+                        <h4>Site statique</h4>
+                        <p>Site vitrine pour augmenter la visibilité de la M2L</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="03-SitePhpDynamique.html">
+                    <img src="site_dynamique.png">
+                    <div class="projetDescription">
+                        <h4>Site PHP Dynamique</h4>
+                        <p>Site Dynamique de la M2L pour gérer les ligues, intervenants et formations</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="04-Amphitryon.html">
+                    <img src="amphitryon.PNG">
+                    <div class="projetDescription">
+                        <h4>Amphitryon</h4>
+                        <p>Application mobile qui permet de gérer les salle, les plats et les commandes</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="05-LegoForScrum.html">
+                    <img src="lego_for_scrum.png">
+                    <div class="projetDescription">
+                        <h4>Lego for SCRUM</h4>
+                        <p>Activité en groupe permettant d'apprendre la méthode agile SCRUM</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="06-DecouverteDeGlpi.html">
+                    <img src="glpi.png">
+                    <div class="projetDescription">
+                        <h4>Découverte de GLPI</h4>
+                        <p>GLPI est une application web qui permet de gérer son parc informatique.</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="08-DeveloppementWebResponsive.html">
+                    <img src="bootstrap.png">
+                    <div class="projetDescription">
+                        <h4>Developpement web responsive</h4>
+                        <p>Développement d'un site web responsive permettant de créer des CV</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="09-TestApi.html">
+                    <img src="Convertigo.png">
+                    <div class="projetDescription">
+                        <h4>Test API</h4>
+                        <p>Grâce à Convertigo, test de tout les chemin d'une API existante</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="10-CréationDuCv.html">
+                    <img src="cv.jpg">
+                    <div class="projetDescription">
+                        <h4>Création du CV</h4>
+                        <p>Processus de créaction et modification de mon CV</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="07-SaveToNextcloud.html">
+                    <img src="save_to_nextcloud.PNG">
+                    <div class="projetDescription">
+                        <h4>Save To NextCloud</h4>
+                        <p>Développement d'un plugin WordPress qui permet de sauvegarder un site dans NextCloud</p>
+                    </div>
+                </a>
+
+                <a class="containerProjet" href="11-VeilleTechnologique.html">
+                    <img src="java.png">
+                    <div class="projetDescription">
+                        <h4>Veille Technologique</h4>
+                        <p>S'informer des nouveautées concernant le language de programmation Java</p>
+                    </div>
+                </a>
+
+                
+            </div>
+            <img src="plante.png" style="position: absolute; bottom: 0; left: 0; width: 100vw; z-index: 3; pointer-events: none;"></img>
+        </section>
+
+        <section class="secContact">
+            <div class="containerTitre"><h2>Contact</h2></div>
+        </section>
+	</body>
+    <script src="script.js"></script>
+    <script src="cv.js"></script>
+</html>

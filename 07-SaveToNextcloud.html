@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta http-equiv="refresh" content="">
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styleProjet.css"/>
+		<title>Lucas | Portfolio</title>
+	</head>
+	<body>
+
+        <header>
+            <a class="leaveProjet" href="index.html"><div class="croix"></div></a>
+        </header>
+
+
+        <section class="secAccueil">
+            <img src="colline1.png" id="colline1" class="background">
+            <img src="colline2.png" id="colline2" class="background">
+            <img src="colline3.png" id="colline3" class="background">
+            <img src="colline4.png" id="colline4" class="background">
+            <img src="colline5.png" id="colline5" class="background">
+            <img src="arbre.png" id="arbre" class="background">
+
+            <div id="containerResumeProjet">
+                <div class="containerTitreDuProjet"><h2 class="titretest">Save To NextCloud</h2></div>
+                <div class="containerImgProjet">
+                    <img src="save_to_nextcloud.PNG" class="imgProjet">
+                </div>
+
+
+                <p class="descriptiontest">Ce plugin permet de sauvegarder votre site WordPress et sa base de données directement sur votre compte NextCloud.
+                    Une fois que vous avez configuré les paramètres, le plugin fonctionnera automatiquement en arrière-plan pour créer des sauvegardes de votre site
+                    et de sa base de données selon votre planning. Les sauvegardes sont stockées directement sur votre compte NextCloud, vous permettant ainsi d’y accéder
+                    de n’importe où, à tout moment.</p>
+            </div>
+
+            <img src="feuille.png" id="feuille" class="background">
+            <img src="plante.png" id="plante" class="background">
+        </section>
+
+        <section class="secCompetences">
+            <div class="containerTitre"><h2>Compétences</h2></div>
+
+            <div class="containerType">
+                <button type="button" class="type-item active" data-target="#un">Gérer le patrimoine informatique</button>
+                <button type="button" class="type-item" data-target="#deux">Répondre aux incidents et aux demandes d’assistance et d’évolution</button>
+                <button type="button" class="type-item" data-target="#cinq">Mettre à disposition des utilisateurs un service informatique</button>
+
+            </div>
+            <!-- Gérer le patrimoine informatique -->
+            <div class="ListCvContent active" id="un">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Gérer des sauvegardes</h4>
+                        <p>L'objectif de se projet était de créer un plugin capable de sauvegarder un site WordPress et sa BDD dans l'application NextCloud automatiquement. </p>
+                        <img src="page_parametre_sauvegarde.PNG" style="display: block; margin: 20px auto;">
+                        <p>On peut choisir la fréquence de sauvegarde, ainsi que le jour et l'heure. Cette sauvegarde sera stocké dans le dossier indiqué. En cas de problème avec son site WordPress, j'ai également développé la partie restauration.</br></p>
+                        <img src="page_parametre_restauration.PNG" style="display: block; margin: 20px auto;"> 
+                        <p>Il suffit de choisir la sauvegarde puis cliquer sur restaurer. Si la sauvegarde voulu n'est pas proposé on peut aussi indiqué le chemin vers la sauvegarde voulu.</p>
+                        <p>J'ai donc développé un plugin capable de sauvegarde et restaurer un site WordPress et sa BDD.</p>
+                        <div class="documentAssocie"><a href="Rapport_de_stage_S8_Lucas_BOUTEVIN_SANCE_SIO2B.pdf" target="_blank">Rapport de stage</a></div>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Vérifier le respect des règles d’utilisation des ressources numériques</h4>
+                        <p>Lors de mon stage, ma mission était de modifier le code du plugin afin de garantir sa conformité aux règles et normes de WordPress lors de sa mise en ligne sur la plateforme. Mon tuteur de stage avait déjà envoyé son code à WordPress pour le publier, mais ils ne l'ont pas accepté et lui ont envoyé un e-mail récapitulant toutes les règles que le code ne respecte pas.</br></p>
+                        <img src="mail1.png" style="display: block; margin: 20px auto;">
+                        <img src="mail2.png" style="display: block; margin: 20px auto;">
+                        <p>On peut voir ici deux problème, le premier indiquant que les nom de classes/fonction ne sont pas assez unique et donc pourrait avoir des conflicts avec d'autres plugin et le deuxième indique qu'il faut utiliser l'API de WordPress pour faire les requête HTTP plutôt que cURL.</p>
+                        <p>Le plugin étant à l'heure actuel disponible à l'utilisation, j'ai correctement respecté les règles concernant la mise en ligne des plugins WordPress.</p>
+                        <div class="documentAssocie"><a href="Rapport_de_stage_S8_Lucas_BOUTEVIN_SANCE_SIO2B.pdf" target="_blank">Rapport de stage</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Répondre aux incidents et aux demandes d’assistance et d’évolution -->
+            <div class="ListCvContent" id="deux">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Traiter des demandes concernant les applications</h4>
+                        <p>Lors de mon stage, ma mission était de modifier le code du plugin afin de garantir sa conformité aux règles et normes de WordPress lors de sa mise en ligne sur la plateforme. Il m'a aussi était demandé de rajouter des paramètres à cet sauvegarde comme, sa fréquence, son jour, son heure... et de rajouter une option de restauration. </p>
+                        <img src="page_parametre_sauvegarde.PNG" style="display: block; margin: 20px auto;">
+                        <img src="page_parametre_restauration.PNG" style="display: block; margin: 20px auto;"> 
+                        <p>J'ai donc traité ces demandes en développant le code necessaire à leur satisfaction.</p>
+                        <div class="documentAssocie"><a href="Rapport_de_stage_S8_Lucas_BOUTEVIN_SANCE_SIO2B.pdf" target="_blank">Rapport de stage</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mettre à disposition des utilisateurs un service informatique -->
+            <div class="ListCvContent" id="cinq">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Déployer un service</h4>
+                        <p>Une fois avoir développé toute les options du plugin et avoir reçu la validation de WordPress confirmant que mon code respecte leurs règles, j'ai déployé le plugin dans WordPress grâce à SVN (Subversion : ça permet de gérer les version). Pour faciliter les porchain déploiement de plugin WordPress ou ses mises à jours, j'ai créer un document expliquant comment utiliser SVN  dans ce contexte. En cliquant si dessous vous pouvez acceder au plugin.</p>
+                        <div class="documentAssocie">
+                            <a href="How to Update the plugin.pdf" target="_blank">How To Update The Plugin</a>
+                            <a href="https://wordpress.com/plugins/stn-save-to-nextcloud" target="_blank">Save To NextCloud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+	</body>
+    <script src="script.js"></script>
+    <script src="competences.js"></script>
+    </html>

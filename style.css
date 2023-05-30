@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Tout le site
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Firefox */
+html {
+    scrollbar-color: #5ab6a9 #fff;
+    scrollbar-width: thin;
+}
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Page Accueil
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 100;
+}
+
+.portfolio{
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 450px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Début A supprimer
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+.navigation{
+    display: none;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Fin A supprimer
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.navigation a{
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.navigation a:hover, .navigation a.active{
+    background: #359381;
+    color: #fff;
+}
+
+.secAccueil{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text, #developpeur{
+    position:absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#developpeur{
+    font-size: 3em;
+    padding-top: 3em;
+}
+
+.secAccueil img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   pointer-events: none; 
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Page CV
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.secCv{
+    position: relative;
+    background: rgba(0,51,41,1);
+    height: 100vh;
+}
+
+.conainterTitre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.conainterTitre h2{
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.duo{
+    display: flex;
+    height: 90%;
+}
+
+.containerPhotoDeMoi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42%;
+    padding: 30px;
+}
+
+.containerPhotoDeMoi img{
+    height: 80%;
+    border: 2px solid #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 5px; 
+}
+
+.droite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 58%;
+    padding: 100px;
+    color: white;
+}
+
+.droite h3{
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+.ListCompetences{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.comp-item{
+    background-color:rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    padding: 5px 15px;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+}
+
+.containerType{
+    margin-top: 20px;
+}
+
+.type-item{
+    padding: 2px 0;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 0 30px 0 0;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3 ease;
+    color: white;
+}
+
+.type-item:last-child{
+    margin: 0;
+}
+
+.type-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.type-item:hover:before{
+    width: 100%;
+}
+
+.type-item.active{
+    color: white;
+    opacity: 1;
+    cursor: auto;
+}
+
+.type-item.active::before{
+    width: 100%;
+    background-color: white;
+}
+
+.ListCvContent{
+    display: none;
+    padding: 40px 0;
+}
+
+.ListCvContent.active{
+    display: block;
+}
+
+.timeline{
+    position: relative;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 5px;
+    background-color: white;
+}
+
+.timeline-item{
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px 0 0 40px;
+}
+
+.timeline-item::before{
+    content: '';
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    left: 0;
+    top: 16px;
+    border-radius: 50%;
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item .date{
+    display: block;
+    color: white;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.timeline-item h4{
+    font-size: 1.2em;
+    margin : 0 0 10px;
+}
+
+.timeline-item h4 span{
+    font-weight: 500;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Page Projet
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.secProjet{
+    position: relative;
+    background: white;
+    min-height: 150vh;
+    padding-bottom: 40vh;
+}
+
+.secProjet .reversePlant{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none; 
+    transform: rotate(180deg);
+    z-index: 3;    
+}
+
+.secProjet .containerTitre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.secProjet h2{
+    font-size: 4em;
+    color: #2a8271;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+}
+
+.lesProjets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lesProjets .containerProjet{
+    position: relative;
+    display: flex;
+    width: calc(100% / 4 - 120px);
+    min-width: 330px;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 30px;
+    transition: .5s ease;
+}
+
+.lesProjets .containerProjet img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.lesProjets .containerProjet:hover img{
+    transform: scale(1.1);
+}
+
+.lesProjets .containerProjet:hover{
+    z-index: 4;
+    background-color: white;
+}
+
+.containerProjet .projetDescription{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .2), #68ccc4);
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.containerProjet:hover .projetDescription{
+    opacity: 1;
+}
+
+.projetDescription h4{
+    font-size: 1.6em;
+}
+
+.projetDescription p{
+    font-size: 1.1em;
+    margin: .3rem 0 1rem;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Page CV
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Début A supprimer
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+.secContact{
+    display: none;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* Fin A supprimer
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.secContact{
+    position: relative;
+    background: rgba(0,51,41,1);
+    height: 100vh;
+}
+
+.secContact .containerTitre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.secContact .containerTitre h2{
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+

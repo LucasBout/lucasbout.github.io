@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta http-equiv="refresh" content="">
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styleProjet.css"/>
+		<title>Lucas | Portfolio</title>
+	</head>
+	<body>
+
+        <header>
+            <a class="leaveProjet" href="index.html"><div class="croix"></div></a>
+        </header>
+
+
+        <section class="secAccueil">
+            <img src="colline1.png" id="colline1" class="background">
+            <img src="colline2.png" id="colline2" class="background">
+            <img src="colline3.png" id="colline3" class="background">
+            <img src="colline4.png" id="colline4" class="background">
+            <img src="colline5.png" id="colline5" class="background">
+            <img src="arbre.png" id="arbre" class="background">
+
+            <div id="containerResumeProjet">
+                <div class="containerTitreDuProjet"><h2 class="titretest">Découverte de GLPI</h2></div>
+                <div class="containerImgProjet">
+                    <img src="glpi.png" class="imgProjet">
+                </div>
+
+
+                <p class="descriptiontest">Dans ce travail pratique visant à nous initier à la gestion d'un parc informatique, nous avons découvert l'application web GLPI. Elle nous permet de dresser une liste complète de tous les éléments de notre parc informatique, qu'ils soient matériels ou immatériels, et leurs attributs. De plus, l'application offre la possibilité de gérer les incidents grâce à son système de gestion de tickets et de base de connaissances intégré.</p>
+            </div>
+
+            <img src="feuille.png" id="feuille" class="background">
+            <img src="plante.png" id="plante" class="background">
+        </section>
+
+        <section class="secCompetences">
+            <div class="containerTitre"><h2>Compétences</h2></div>
+
+            <div class="containerType">
+                <button type="button" class="type-item active" data-target="#un">Gérer le patrimoine informatique</button>
+                <button type="button" class="type-item" data-target="#deux">Répondre aux incidents et aux demandes d’assistance et d’évolution</button>
+            </div>
+            <!-- Gérer le patrimoine informatique -->
+            <div class="ListCvContent active" id="un">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Recenser et identifier les ressources numériques</h4>
+                        <p>GLPI est un gestionnaire de parc informatique qui nous permet de dresser une liste complète de tous les éléments de notre parc informatique, qu'ils soient matériels ou immatériels, et leurs attributs. On peut voir sur le tableau central de l'application un tas d'information sur nos éléments recensé : </p>
+                        <img src="Tableau_central.PNG" style="display: block; margin: 20px auto;">
+                        <p>On peut aussi chercher un élément grâce à son nom ou ses caractéristique, par exemple l'ordinateur F103SV01 :</br></p>
+                        <img src="recherche_element.png" style="display: block; margin: 20px auto;">
+                        <p>On obtient alors des informations à son sujet :</p>
+                        <img src="resultat_recherche.png" style="display: block; margin: 20px auto;">
+                        <p>Ce travail pratique, nous a donc appris à recenser et identifier les ressources numériques.</br></p>
+                        <div class="documentAssocie">
+                        <a href="TP7- Découverte de GLPI.pdf" target="_blank">Compte rendu GLPI</a>
+                        <a href="Tips et astuces pour compte rendu.pdf" target="_blank">Tips pour compte rendu</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <!-- Répondre aux incidents et aux demandes d’assistance et d’évolution -->
+            <div class="ListCvContent" id="deux">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Collecter, suivre et orienter des demandes</h4>
+                        <p>Le logiciel GLPI permet la gestion d'incidents grâce à un système de ticketing et de base de connaissances. D'abord, lorsqu'un utilisateur remarque un incident, il crée un ticket :</p>
+                        <img src="creation_ticket.png" style="display: block; margin: 20px auto;">
+                        <p>Ce ticket va être attribué à une personne qui pourra désormé voir le ticket :</p>
+                        <img src="recherche_ticket.png" style="display: block; margin: 20px auto;">
+                        <p>Lorsque la personne commence à régler le problème, elle doit modifier le status du ticket pour le faire passer de "Ouvert" à "En cours" et ajouter à l'historique des actions les tâches affectuées :</p>
+                        <img src="historique_des_actions.PNG" style="display: block; margin: 20px auto;">
+                        <p>Une fois le problème réglé le status du ticket passera en "Résolu", puis, si l'utilisateur final est satisfait du résultat il cloturera le ticket.</p>
+                        <img src="changement_status_ticket.PNG" style="display: block; margin: 20px auto;">
+                        <div class="documentAssocie">
+                            <a href="TP7- Découverte de GLPI.pdf" target="_blank">Compte rendu GLPI</a>
+                            <a href="Tips et astuces pour compte rendu.pdf" target="_blank">Tips pour compte rendu</a>
+                        </div> 
+                    </div>                   
+                </div>
+            </div>  
+        </section>
+
+	</body>
+    <script src="script.js"></script>
+    <script src="competences.js"></script>
+    </html>

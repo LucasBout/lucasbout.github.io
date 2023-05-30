@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta http-equiv="refresh" content="">
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styleProjet.css"/>
+		<title>Lucas | Portfolio</title>
+	</head>
+	<body>
+
+        <header>
+            <a class="leaveProjet" href="index.html"><div class="croix"></div></a>
+        </header>
+
+
+        <section class="secAccueil">
+            <img src="colline1.png" id="colline1" class="background">
+            <img src="colline2.png" id="colline2" class="background">
+            <img src="colline3.png" id="colline3" class="background">
+            <img src="colline4.png" id="colline4" class="background">
+            <img src="colline5.png" id="colline5" class="background">
+            <img src="arbre.png" id="arbre" class="background">
+
+            <div id="containerResumeProjet">
+                <div class="containerTitreDuProjet"><h2 class="titretest">Site statique</h2></div>
+                <div class="containerImgProjet">
+                    <img src="site_statique.png" class="imgProjet">
+                </div>
+
+
+                <p class="descriptiontest">La maison des ligues de Lorraine (M2L) souhaite disposer d’un site statique (simples pages HTML/CSS, sans connexion à une base de données) 
+                    pour présenter ses activités, ses ressources et ses ligues. Nous sommes contactés pour réaliser cette mission.</p>
+            </div>
+
+            <img src="feuille.png" id="feuille" class="background">
+            <img src="plante.png" id="plante" class="background">
+        </section>
+
+        <section class="secCompetences">
+            <div class="containerTitre"><h2>Compétences</h2></div>
+
+            <div class="containerType">
+                <button type="button" class="type-item active" data-target="#trois">Développer la présence en ligne de l’organisation</button>
+            </div>
+            <!-- Développer la présence en ligne de l’organisation -->
+            <div class="ListCvContent active" id="trois">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Participer à l’évolution d’un site Web exploitant les données de l’organisation.</h4>
+                        <p>L'objectif de ce projet est de développer un site vitrine complet pour la M2L. Ce site comportera plusieurs pages dont les services et les locaux de la M2L, nous avions accès aux données de l'organisation : <br></p>
+                        <div style="margin-left: 40px; margin-top: 15px; margin-bottom: 15px;">
+                            <p> - Les services :</br>
+                            </p>
+                        </div>
+                        <img src="donnees_services.png" style="display: block; margin: 20px auto;">
+                        <div style="margin-left: 40px; margin-top: 15px; margin-bottom: 15px;">
+                            <p> - Les locaux :</br>
+                            </p>
+                        </div>
+                        <img src="donnees_locaux.PNG" style="display: block; margin: 20px auto;">
+                        <p>Cela nous a donc permis d'apprendre à développer un site statique pour une orginisation en exploitant ces données.</p>
+                        <div class="documentAssocie" style="margin-bottom: 20px;">
+                            <a href="M2L - Les Services.pdf" target="_blank">Données Services</a>
+                            <a href="M2L - Les Locaux.pdf" target="_blank">Données Locaux</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+	</body>
+    <script src="script.js"></script>
+    <script src="competences.js"></script>
+    </html>

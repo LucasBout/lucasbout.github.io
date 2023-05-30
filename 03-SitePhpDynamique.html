@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta http-equiv="refresh" content="">
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styleProjet.css"/>
+		<title>Lucas | Portfolio</title>
+	</head>
+	<body>
+
+        <header>
+            <a class="leaveProjet" href="index.html"><div class="croix"></div></a>
+        </header>
+
+
+        <section class="secAccueil">
+            <img src="colline1.png" id="colline1" class="background">
+            <img src="colline2.png" id="colline2" class="background">
+            <img src="colline3.png" id="colline3" class="background">
+            <img src="colline4.png" id="colline4" class="background">
+            <img src="colline5.png" id="colline5" class="background">
+            <img src="arbre.png" id="arbre" class="background">
+
+            <div id="containerResumeProjet">
+                <div class="containerTitreDuProjet"><h2 class="titretest">Site PHP Dynamique</h2></div>
+                <div class="containerImgProjet">
+                    <img src="site_dynamique.png" class="imgProjet">
+                </div>
+
+
+                <p class="descriptiontest">La Maison des Ligues de Lorraine dispose d’un site statique destiné à informer les internautes,
+                    mais elle souhaite le compléter avec différentes fonctionnalités.</p>
+            </div>
+
+            <img src="feuille.png" id="feuille" class="background">
+            <img src="plante.png" id="plante" class="background">
+        </section>
+
+        <section class="secCompetences">
+            <div class="containerTitre"><h2>Compétences</h2></div>
+
+            <div class="containerType">
+                <button type="button" class="type-item active" data-target="#un">Gérer le patrimoine informatique</button>
+                <button type="button" class="type-item" data-target="#trois">Développer la présence en ligne de l’organisation</button>
+            </div>
+            <!-- Gérer le patrimoine informatique -->
+            <div class="ListCvContent active" id="un">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Mettre en place et vérifier les niveaux d’habilitation associés à un service</h4>
+                        <p>Dans ce projet, il y a différents type d'utilisateur : intervenant, secrétaire, responsable de formation.</p>
+                        <img src="role.PNG" style="display: block; margin: 20px auto;">
+                        <p>Les niveaux d'habilitation de ces rôles sont différents. Avant de pouvoir afficher leurs fonctionnalités, il faut donc savoir quel type d'utilisateur est présent. C'est pourquoi nous avons mis en place un système de connexion.</p>
+                        <img src="connexion_php.PNG" style="display: block; margin: 20px auto;">
+                        <p>Chaque personne dispose d'un compte avec son rôle. En arrivant sur le site, l'utilisateur doit se connecter avec son identifiant et son mot de passe, ce qui lui permet d'accéder uniquement à ce à quoi il est autorisé.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Développer la présence en ligne de l’organisation -->
+            <div class="ListCvContent" id="trois">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Participer à l’évolution d’un site Web exploitant les données de l’organisation</h4>
+                        <p>Dans ce projet il nous a été demandé de modifier un site statique pour lui ajouter certaine fonctionnalitées. Ces fonctionnalitées ont requis la création et l'utilisation d'une base de données qui va être exploiter par le site web.
+                            Cette base de donnée va contenir des informations de l'organisation qui vont ensuite être exploiter par le site web. Par exmple lorsqu'on ajoute une formation :</p>
+                            <img src="ajoutFormation.PNG" style="display: block; margin: 20px auto;">
+
+                            <p>Cette formation va être ajouter à la base de donnée et le site va désormé l'afficher. </p>
+                        </p>
+                        <div class="documentAssocie"><a href="E5 - Fiche Réalisation Professionnelle - Projet de modification du site de la M2L - Lucas BOUTEVIN SANCÉ SIO2B.pdf" target="_blank" style="display: block; margin: 20px auto;">Description détaillé du projet</a></div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+	</body>
+    <script src="script.js"></script>
+    <script src="competences.js"></script>
+    </html>

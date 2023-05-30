@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta http-equiv="refresh" content="">
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styleProjet.css"/>
+		<title>Lucas | Portfolio</title>
+	</head>
+	<body>
+
+        <header>
+            <a class="leaveProjet" href="index.html"><div class="croix"></div></a>
+        </header>
+
+
+        <section class="secAccueil">
+            <img src="colline1.png" id="colline1" class="background">
+            <img src="colline2.png" id="colline2" class="background">
+            <img src="colline3.png" id="colline3" class="background">
+            <img src="colline4.png" id="colline4" class="background">
+            <img src="colline5.png" id="colline5" class="background">
+            <img src="arbre.png" id="arbre" class="background">
+
+            <div id="containerResumeProjet">
+                <div class="containerTitreDuProjet"><h2 class="titretest">Réservation des salles</h2></div>
+                <div class="containerImgProjet">
+                    <img src="reservation_des_salles.jpg" class="imgProjet">
+                </div>
+
+
+                <p class="descriptiontest">La M2L envisage de mettre à disposition des ligues un outil de réservation des salles. On dispose d'une application C# déjà commencée. Notre objectif va être d'évaluer l'application en cours de développement. Ensuite, avec une nouvelle version de l'application, on devra valider les contrôles de saisie en utilisant l'outil de ticketing de GitLab. Puis, on modifiera l'interface de l'application pour répondre aux nouveaux besoins.</p>
+            </div>
+
+            <img src="feuille.png" id="feuille" class="background">
+            <img src="plante.png" id="plante" class="background">
+        </section>
+
+        <section class="secCompetences">
+            <div class="containerTitre"><h2>Compétences</h2></div>
+
+            <div class="containerType">
+                <button type="button" class="type-item active" data-target="#deux">Répondre aux incidents et aux demandes d’assistance et d’évolution</button>
+                <button type="button" class="type-item" data-target="#cinq">Mettre à disposition des utilisateurs un service informatique</button>
+            </div>
+            <!-- Répondre aux incidents et aux demandes d’assistance et d’évolution -->
+            <div class="ListCvContent active" id="deux">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Collecter, suivre et orienter des demande</h4>
+                        <p>Lorsque nous avons reçu la deuxième version de l'application, notre rôle a été de contrôler les input pour que chacun d'eux respecte les valeurs attendus. </p>
+                            <img src="format_des_donnees.PNG" style="display: block; margin: 20px auto;">
+                            <p>Pour se faire, chacun des membre du groupe a prit en charge un domaine (salles, ligues, réservant), 
+                            puis, grâce à l'outil de ticketing de GitLab, à :</br></p>
+                            <div style="margin-left: 40px; margin-top: 15px; margin-bottom: 15px;">
+                                <p> - créé un ticket correspondant à son domaine</br>
+                                    - assigné le ticket à un membre du groupe en donnant au ticket un poid et une échéance</br>
+                                    - commenté et cloturé chacun des tickets qui lui on était assigné</br>
+                                </p>
+                            </div>
+                            <p>Cela nous a donc permis d'apprendre le système de ticketing et son fonctionnement.</p>
+                            <div class="documentAssocie"><a href="git(4)-Gestion des tickets.pdf" target="_blank">Gestion des tickets Git</a></div>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Traiter des demandes concernant les applications</h4>
+                        <p>Le principe même de ce projet était de traiter des demandes concernant l'application de réservation des salles de la M2L. On a :</br></p>
+                        <div style="margin-left: 40px; margin-top: 15px; margin-bottom: 15px;">
+                            <p> - Vérifier le bon fonctionnement de l'application grâce à un cahier des charges fonctionnel :</br>
+                            </p>
+                        </div>
+                        <img src="cahier_des_charges_fonctionnel.PNG" style="display: block; margin: 20px auto;">
+                        <div style="margin-left: 40px; margin-top: 15px; margin-bottom: 15px;">
+                            <p> - Valider les contrôles de saisie :</br>
+                            </p>
+                        </div>
+                        <img src="format_des_donnees.PNG" style="display: block; margin: 20px auto;">
+                        <div style="margin-left: 40px; margin-top: 15px; margin-bottom: 15px;">
+                            <p> - Modifier l'interface de l'application pour répondre aux besoins :</br>
+                            </p>
+                        </div>
+                        <img src="Interface_demande.PNG" style="display: block; margin: 20px auto;">
+
+                    </div>
+                </div>
+            </div>
+            <!-- Mettre à disposition des utilisateurs un service informatique -->
+            <div class="ListCvContent" id="cinq">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Accompagner les utilisateurs dans la mise en place d’un service</h4>
+                        <p>Une fois avoir vérifié les fonctionnalitées de l'application, on a du rédiger une documentation destinée aux futurs utilisateurs de l'application. L’objectif de cette documentation est de faciliter au maximum la prise en mains de cette application par les futurs utilisateurs. Ceci représente un véritable accompagnement dans la mise en place de l'application au sein de la M2L.</p>
+                        <div class="documentAssocie"><a href="AP 2 Rédaction doc utilisateur xml.pdf" target="_blank">Documentation utilisateur</a></div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+	</body>
+    <script src="script.js"></script>
+    <script src="competences.js"></script>
+    </html>
